@@ -88,11 +88,11 @@ nav{
     background-color: var(--Color_Nav);
     margin-top: -45px;
 }
-nav img{
+nav #logo {
     height: 150px;
     width: auto;
 }
-nav div{
+nav #prench-container {
     height: 40px;
     width: 100%;
     border-top: solid 1px #824fda;
@@ -100,14 +100,14 @@ nav div{
     background-color: var(--Color-Pranc);
     margin-top: -40px;
 }
-h1{
+#Title {
     font-family:'Franklin Gothic Medium';
     text-align: center;
     margin: 15px;
     color: var(--text_color);
     
 }
-main img{
+main #ilustr_image {
     border-radius: 14px;
     width: 60%;
 }
@@ -264,11 +264,11 @@ footer{
     background-color: var(--Color_Footer);
     padding: 20px;
 }
-footer div{
+footer #social-media {
     display: flex;
     gap: 15px;
 }
-footer p.rodape {
+footer p.copyright {
     margin: 0;
     text-align: right;
     font-size: larger;
@@ -295,7 +295,7 @@ footer img:hover{
     padding: 10px 0;
   }
 
-  h1 {
+  #Title {
     font-size: 24px;
     margin: 10px;
   }
@@ -305,7 +305,7 @@ footer img:hover{
     margin: 30px 20px;
   }
 
-  main img {
+  main #ilustr_image {
     width: 90%;
   }
 
@@ -360,7 +360,7 @@ footer img:hover{
     text-align: center;
   }
 
-  footer p.rodape {
+  footer p.copyright {
     font-size: 16px;
   }
 
