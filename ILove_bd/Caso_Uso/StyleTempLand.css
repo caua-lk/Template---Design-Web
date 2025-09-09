@@ -221,33 +221,56 @@ button.BtnTopage {
 }
 #packetcarousel{
     margin: 25px;
-
 }
 .card {
-  flex: 0 0 auto;
-  width: 400px;
-  height: 300px;
-  background-image: var(--Gradient);
-  padding: 25px;
-  text-align: justify;
-  border-radius: 10px;
-  color: white;
-  scroll-snap-align: start;
-  transition: transform 0.2s ease;
+flex: 0 0 auto;
+width: 400px;
+height: auto;
+padding: 25px;
+text-align: justify;
+border-radius: 16px;
+color: var(--text_color);
+scroll-snap-align: start;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+background: rgba(255, 255, 255, 0.1); /* efeito vidro */
+backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+background-image: linear-gradient(135deg, var(--Gradient_ini), var(--Gradient_end));
+background-size: 200% 200%;
+animation: gradientMove 6s ease infinite;
 }
-.card:hover{
-  transform: scale(1.05);
+
+@keyframes gradientMove {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
 }
+
+.card:hover {
+transform: translateY(-10px) scale(1.05);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
 .card h3 {
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 27px;
+margin-bottom: 15px;
+text-align: center;
+font-size: 28px;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+letter-spacing: 1px;
+}
+
+.card ul {
+padding-left: 0;
 }
 
 .card ul li {
-  margin-bottom: 8px;
-  font-size: 20px;
-  list-style-position: inside;
+margin-bottom: 10px;
+font-size: 20px;
+list-style: none;
+position: relative;
+padding-left: 20px;
 }
 .highlight {
   border: 1px solid var(--Color_Review);
