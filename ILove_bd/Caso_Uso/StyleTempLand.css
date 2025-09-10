@@ -12,7 +12,7 @@ html{
     --Color-Pranc: #1A3E77;
     --Color_Body: #264076;
     --Color_Footer: #0E3570;
-    --Color_Button: rgb(130,128,207, 0.9);
+    --Color_Button: rgba(130,128,207, 0.9);
 
     --Gradient_ini: #7979C6;
     --Gradient_end: #54609F;
@@ -33,7 +33,7 @@ html{
     --Color-Pranc: #629EFF;
     --Color_Body: #D4E2FF;
     --Color_Footer: #5587D2;
-    --Color_Button: rgb(50,47,133, 0.9);
+    --Color_Button: rgba(50,47,133, 0.9);
 
     --Gradient_ini: #3F51B5;
     --Gradient_end: #5567CE;
@@ -41,8 +41,8 @@ html{
     --Gradient: linear-gradient(to right, var(--Gradient_ini), var(--Gradient_end));
 
     --Color_ScrollTrack: #74a3ff;
-    --Color_ScrollThumb: #3535d3;;
-    --Color_ScrollThumbhover: #1919a7;;
+    --Color_ScrollThumb: #3535d3;
+    --Color_ScrollThumbhover: #1919a7;
 
     --Color_Review: #f9f9f9;
     --text_color: #000000;
@@ -239,6 +239,7 @@ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 background-image: linear-gradient(135deg, var(--Gradient_ini), var(--Gradient_end));
 background-size: 200% 200%;
 animation: gradientMove 6s ease infinite;
+overflow: hidden;
 }
 
 @keyframes gradientMove {
@@ -253,10 +254,11 @@ box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 }
 
 .card h3 {
+color: var(--text_color);
 margin-bottom: 15px;
 text-align: center;
 font-size: 28px;
-font-family: 'Poppins', sans-serif;
+font-family: 'Poppins';
 font-weight: 600;
 letter-spacing: 1px;
 }
@@ -271,6 +273,7 @@ font-size: 20px;
 list-style: none;
 position: relative;
 padding-left: 20px;
+color: var(--text_color);
 }
 .highlight {
   border: 1px solid var(--Color_Review);
